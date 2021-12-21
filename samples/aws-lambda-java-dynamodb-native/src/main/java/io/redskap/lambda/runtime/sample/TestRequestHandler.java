@@ -14,9 +14,9 @@ import java.util.UUID;
 public class TestRequestHandler implements RequestHandler<TestRequest, String> {
     @Override
     public String handleRequest(TestRequest input, Context context) {
-        AmazonDynamoDB dynamo = AmazonDynamoDBClientBuilder.standard().withRegion(Regions.EU_CENTRAL_1).build();
+        AmazonDynamoDB dynamo = AmazonDynamoDBClientBuilder.standard().withRegion(Regions.US_EAST_1).build();
         PutItemRequest putItemRequest = new PutItemRequest();
-        putItemRequest.setTableName("test-db");
+        putItemRequest.setTableName("lambda-native-image-test-db");
         HashMap<String, AttributeValue> items = new HashMap<>();
         items.put("id", new AttributeValue(UUID.randomUUID().toString()));
         items.put("name", new AttributeValue(input.getName()));

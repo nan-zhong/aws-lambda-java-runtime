@@ -1,3 +1,8 @@
+# Adaption
+This project is forked from https://github.com/redskap/aws-lambda-java-runtime
+
+The challenges and solutions to get it running as a Lambda function are documented in [Building native images for AWS Lambda](https://docs.google.com/document/d/1Ux1QjL0zEvjp-560pC7F0ZhyIN0Fj0itGlZI98gOW94/edit#heading=h.xsl37g8j3blg)
+
 # AWS Lambda Java Runtime
 The library has been created to have a production ready 
 implementation of the [AWS Lambda Runtime API](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html) in Java, and to use it as
