@@ -1,7 +1,7 @@
-FROM amazon/aws-lambda-provided:al2.2021.03.22.18
+FROM amazon/aws-lambda-provided:al2.2021.12.21.23
 ENV LANG=en_US.UTF-8
 RUN yum install -y gcc gcc-c++ libc6-dev zlib1g-dev curl bash zlib zlib-devel zip tar gzip
-ENV GRAAL_VERSION 21.0.0.2
+ENV GRAAL_VERSION 21.3.0
 ENV JDK_VERSION java11
 ENV GRAAL_FILENAME graalvm-ce-${JDK_VERSION}-linux-amd64-${GRAAL_VERSION}.tar.gz
 ENV GRAALVM_HOME /usr/lib/graalvm
